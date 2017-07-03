@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{027679EF-377B-4F8D-8F0E-E7C60724558B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wpf_Cards_StackPanel</RootNamespace>
+    <AssemblyName>Wpf_Cards_StackPanel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Effects" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="List.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Node.cs" />
+    <Compile Include="Pocket.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Blue\ChangeDirBlue.png" />
+    <Resource Include="Images\Blue\EightBlue.png" />
+    <Resource Include="Images\Blue\FifthBlue.png" />
+    <Resource Include="Images\Blue\FirstBlue.png" />
+    <Resource Include="Images\Blue\ForthBlue.png" />
+    <Resource Include="Images\Blue\NineBlue.png" />
+    <Resource Include="Images\Blue\PlusBlue.png" />
+    <Resource Include="Images\Blue\SecondPlusBlue.png" />
+    <Resource Include="Images\Blue\SevenBlue.png" />
+    <Resource Include="Images\Blue\SixthBlue.png" />
+    <Resource Include="Images\Blue\StopBlue.png" />
+    <Resource Include="Images\Blue\TakiBlue.png" />
+    <Resource Include="Images\Blue\ThirdBlue.png" />
+    <Resource Include="Images\Different\ColorfulTaki.png" />
+    <Resource Include="Images\Green\ChangeDirGreen.png" />
+    <Resource Include="Images\Green\EightGreen.png" />
+    <Resource Include="Images\Green\FifthGreen.png" />
+    <Resource Include="Images\Green\FirstGreen.png" />
+    <Resource Include="Images\Green\ForthGreen.png" />
+    <Resource Include="Images\Green\GreenCube.png" />
+    <Resource Include="Images\Green\NineGreen.png" />
+    <Resource Include="Images\Green\PlusGreen.png" />
+    <Resource Include="Images\Green\SecondPlusGreen.png" />
+    <Resource Include="Images\Green\SevenGreen.png" />
+    <Resource Include="Images\Green\SixthGreen.png" />
+    <Resource Include="Images\Green\StopGreen.png" />
+    <Resource Include="Images\Green\TakiGreen.png" />
+    <Resource Include="Images\Green\ThirdGreen.png" />
+    <Resource Include="Images\Red\ChangeDirRed.png" />
+    <Resource Include="Images\Red\EightRed.png" />
+    <Resource Include="Images\Red\FifthRed.png" />
+    <Resource Include="Images\Red\FirstRed.png" />
+    <Resource Include="Images\Red\ForthRed.png" />
+    <Resource Include="Images\Red\NineRed.png" />
+    <Resource Include="Images\Red\PlusRed.png" />
+    <Resource Include="Images\Red\RedCube.png" />
+    <Resource Include="Images\Red\SecondPlusRed.png" />
+    <Resource Include="Images\Red\SevenRed.png" />
+    <Resource Include="Images\Red\SixthRed.png" />
+    <Resource Include="Images\Red\StopRed.png" />
+    <Resource Include="Images\Red\TakiRed.png" />
+    <Resource Include="Images\Red\ThirdRed.png" />
+    <Resource Include="Images\Yellow\ChangeDirYellow.png" />
+    <Resource Include="Images\Yellow\CubeYellow.png" />
+    <Resource Include="Images\Yellow\EightYellow.png" />
+    <Resource Include="Images\Yellow\FifthYellow.png" />
+    <Resource Include="Images\Yellow\FirstYellow.png" />
+    <Resource Include="Images\Yellow\ForthYellow.png" />
+    <Resource Include="Images\Yellow\NineYellow.png" />
+    <Resource Include="Images\Yellow\PlusYellow.png" />
+    <Resource Include="Images\Yellow\SecondPlusYellow.png" />
+    <Resource Include="Images\Yellow\SevenYellow.png" />
+    <Resource Include="Images\Yellow\SixthYellow.png" />
+    <Resource Include="Images\Yellow\StopYellow.png" />
+    <Resource Include="Images\Yellow\TakiYellow.png" />
+    <Resource Include="Images\Yellow\ThirdYellow.png" />
+    <Resource Include="Images\Different\CubeColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Blue\BlueCube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ProjectImages\BackCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ProjectImages\imagesCAX8U4HQ.jpg" />
+    <Resource Include="ProjectImages\התחלמ1.png" />
+    <Resource Include="ProjectImages\הסבר.png" />
+    <Resource Include="ProjectImages\יציאה.png" />
+    <Resource Include="ProjectImages\Untitled.png" />
+    <Resource Include="ProjectImages\logo copy.png" />
+    <Resource Include="ProjectImages\עזרה.png" />
+    <Resource Include="ProjectImages\LeftArrow.png" />
+    <Resource Include="ProjectImages\superTaki.png" />
+    <Resource Include="ProjectImages\שחקן 1.png" />
+    <Resource Include="ProjectImages\שחקן 2.png" />
+    <Content Include="SecondPlus.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stop.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

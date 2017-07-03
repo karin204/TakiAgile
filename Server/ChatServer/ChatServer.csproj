@@ -1,0 +1,146 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CECAACB4-9950-4A86-84A0-53A4A9FA71A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChatServer</RootNamespace>
+    <AssemblyName>ChatServer</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="ChatServer.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Blue\BlueCube.png" />
+    <Content Include="Images\Blue\ChangeDirBlue.png" />
+    <Content Include="Images\Blue\EightBlue.png" />
+    <Content Include="Images\Blue\FifthBlue.png" />
+    <Content Include="Images\Blue\FirstBlue.png" />
+    <Content Include="Images\Blue\ForthBlue.png" />
+    <Content Include="Images\Blue\NineBlue.png" />
+    <Content Include="Images\Blue\PlusBlue.png" />
+    <Content Include="Images\Blue\SecondPlusBlue.png" />
+    <Content Include="Images\Blue\SevenBlue.png" />
+    <Content Include="Images\Blue\SixthBlue.png" />
+    <Content Include="Images\Blue\StopBlue.png" />
+    <Content Include="Images\Blue\TakiBlue.png" />
+    <Content Include="Images\Blue\ThirdBlue.png" />
+    <Content Include="Images\Different\ColorfulTaki.png" />
+    <Content Include="Images\Different\CubeColor.png" />
+    <Content Include="Images\Green\ChangeDirGreen.png" />
+    <Content Include="Images\Green\EightGreen.png" />
+    <Content Include="Images\Green\FifthGreen.png" />
+    <Content Include="Images\Green\FirstGreen.png" />
+    <Content Include="Images\Green\ForthGreen.png" />
+    <Content Include="Images\Green\GreenCube.png" />
+    <Content Include="Images\Green\NineGreen.png" />
+    <Content Include="Images\Green\PlusGreen.png" />
+    <Content Include="Images\Green\SecondPlusGreen.png" />
+    <Content Include="Images\Green\SevenGreen.png" />
+    <Content Include="Images\Green\SixthGreen.png" />
+    <Content Include="Images\Green\StopGreen.png" />
+    <Content Include="Images\Green\TakiGreen.png" />
+    <Content Include="Images\Green\ThirdGreen.png" />
+    <Content Include="Images\Red\ChangeDirRed.png" />
+    <Content Include="Images\Red\EightRed.png" />
+    <Content Include="Images\Red\FifthRed.png" />
+    <Content Include="Images\Red\FirstRed.png" />
+    <Content Include="Images\Red\ForthRed.png" />
+    <Content Include="Images\Red\NineRed.png" />
+    <Content Include="Images\Red\PlusRed.png" />
+    <Content Include="Images\Red\RedCube.png" />
+    <Content Include="Images\Red\SecondPlusRed.png" />
+    <Content Include="Images\Red\SevenRed.png" />
+    <Content Include="Images\Red\SixthRed.png" />
+    <Content Include="Images\Red\StopRed.png" />
+    <Content Include="Images\Red\TakiRed.png" />
+    <Content Include="Images\Red\ThirdRed.png" />
+    <Content Include="Images\Yellow\ChangeDirYellow.png" />
+    <Content Include="Images\Yellow\CubeYellow.png" />
+    <Content Include="Images\Yellow\EightYellow.png" />
+    <Content Include="Images\Yellow\FifthYellow.png" />
+    <Content Include="Images\Yellow\FirstYellow.png" />
+    <Content Include="Images\Yellow\ForthYellow.png" />
+    <Content Include="Images\Yellow\NineYellow.png" />
+    <Content Include="Images\Yellow\PlusYellow.png" />
+    <Content Include="Images\Yellow\SecondPlusYellow.png" />
+    <Content Include="Images\Yellow\SevenYellow.png" />
+    <Content Include="Images\Yellow\SixthYellow.png" />
+    <Content Include="Images\Yellow\StopYellow.png" />
+    <Content Include="Images\Yellow\TakiYellow.png" />
+    <Content Include="Images\Yellow\ThirdYellow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
